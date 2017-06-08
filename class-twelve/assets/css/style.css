@@ -1,0 +1,194 @@
+/* Base CSS */
+@font-face
+{font-family:'CodeBold';
+    src:url('../fonts/Code-Bold.eot');
+    src:url('../fonts/Code-Bold.eot') format('embedded-opentype'),
+        url('../fonts/Code-Bold.woff2') format('woff2'),
+        url('../fonts/Code-Bold.woff') format('woff'),
+        url('../fonts/Code-Bold.ttf') format('truetype'),
+        url('../fonts/Code-Bold.svg#codebold') format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+@font-face
+{font-family:'CodeLight';
+    src:url('../fonts');
+    src:url('../fontss/Code-Light.eot') format('embedded-opentype'),
+        url('../fonts/Code-Light.woff2') format('woff2'),
+        url('../fonts/Code-Light.woff') format('woff'),
+        url('../fonts/Code-Light.ttf') format('truetype'),
+        url('../fonts/Code-Light.svg#codelight') format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: normal;
+    font-family: 'CodeBold', sans-serif;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+a:hover { text-decoration: none }
+.product-bg-1{background-image: url(../img/lady-1.png) no-repeat}
+.product-bg-2{background-image: url(../img/lady-2.png) no-repeat}
+.product-bg-3{background-image: url(../img/lady-3.png) no-repeat}
+.product-bg-4{background-image: url(../img/lady-4.png) no-repeat}
+.product-bg-5{background-image: url(../img/lady-5.png) no-repeat}
+.product-bg-6{background-image: url(../img/lady-6.png) no-repeat}
+.product-bg-7{background-image: url(../img/lady-7.png) no-repeat}
+.product-bg-8{background-image: url(../img/lady-8.png) no-repeat}
+.product-bg-9{background-image: url(../img/lady-9.png) no-repeat}
+.product-bg-10{background-image: url(../img/lady-10.png) no-repeat}
+body, html{
+    height: 100%;
+}
+.homepage-slider-wrapper {
+    background-color: #ebd8d1;
+    background-image: url("../img/hero-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+}
+.header-top-area a {
+    color: #5b4060;
+    display: inline-block;
+}
+
+.header-top-area {
+  font-size: 13px;
+  font-weight: bold;
+  left: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+    z-index: 99;
+}
+.header-left ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.header-left li {
+    display: inline-block;
+}
+.header-top-area .menu-trigger{
+    display: none;
+}
+.header-left li a{
+    display: inline-block;
+    padding: 13px;
+}
+.header-right {
+    text-align: right;
+}
+.header-right a {
+    display: inline-block;
+    padding: 10px 13px;
+}
+.header-right a:last-child {
+    padding: 0;
+}
+
+.single-slider-item {
+    position: relative;
+}
+.single-slider-item img {
+    bottom: 0;
+    height: auto;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 700px;
+}
+.slider-text-table {
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+}
+.slide-text-tablecell {
+    color: #e55288;
+    display: table-cell;
+    font-family: codelight,sans-serif;
+    font-size: 120px;
+    line-height: 100px;
+    padding-left: 15%;
+    vertical-align: middle;
+}
+.homepage-slider-wrapper div {
+    height: 100%;
+}
+.slide-text-tablecell strong {
+    font-family: codeBold,sans-serif;
+    font-weight: normal;
+}
+.slider-text-color-2 {
+    color: #6fb0c5;
+}
+.big-menu {
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.big-menu li {
+    background: #ecf3e8 none repeat scroll 0 0;
+    float: left;
+    font-family: codelight;
+    font-size: 50px;
+    transition: all 0.3s ease 0s;
+    width: 30%;
+}
+.big-menu li a {
+    color: #5b3f61;
+    display: block;
+    padding: 170px 30px 30px;
+    text-align: right;
+}
+.big-menu li:nth-child(2) a {
+    color: #e84f88;
+    font-family: codebold;
+}
+.big-menu li:nth-child(2) {
+    background: #f1e5e5 none repeat scroll 0 0;
+}
+.big-menu li:nth-child(3) {
+    background: #f6f3e6 none repeat scroll 0 0;
+}
+.big-menu li:nth-child(4) {
+    background: #ecf4f5 none repeat scroll 0 0;
+}
+.big-menu li:nth-child(2), .big-menu li:nth-child(3) {
+    width: 20%;
+}
+.big-menu li:hover {
+    opacity: 0.5;
+}
+

@@ -1,0 +1,130 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+    .single-product-items {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+    .single-product-items:nth-child(2) {
+        height: 520px;
+    }
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .big-menu li {
+        font-size: 30px;
+    }
+    .big-menu li a {
+        padding: 130px 30px 30px;
+    }
+    .single-product-items {
+        width: 31.333%;
+    }
+    .single-product-items:nth-child(2), .single-product-items:nth-child(4), .single-product-items:nth-child(9) {
+        width: 64.6666%;
+    }
+    .promo-bg{
+        padding: 20px 20px 0 20px;
+    }
+    .footer-area, .footer-area .text-right {
+        text-align: center;
+    }
+    .footer-menu li {
+        padding: 20px;
+    }
+
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+    .header-left > ul {
+        display: none;
+    }
+    .header-right {
+        display: none;
+    }
+    .header-top-area {
+        position: relative;
+    }
+    .homepage-slider-wrapper {
+        height: auto;
+    }
+
+    .slide-text-tablecell {
+        font-size: 50px;
+        line-height: 60px;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .single-slider-item img {
+        display: none !important;
+    }
+    .homepage-slides .owl-stage-outer .owl-stage .active .single-slider-item .slide-text-tablecell{
+        animation: none;
+    }
+
+    .big-menu li {
+        float: none;
+        font-size: 40px;
+        width: auto;
+    }
+    .big-menu li a {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .big-menu li:nth-child(2), .big-menu li:nth-child(3) {
+        width: auto;
+    }
+    .single-product-items, .single-product-items:nth-child(2), .single-product-items:nth-child(9), .single-product-items:nth-child(4) {
+        width: 100%;
+        float: none;
+    }
+    .promo-content {
+        padding: 20px;
+    }
+    .promo-bg{
+        padding-top: 10px;
+    }
+    .promo-title h2 {
+        font-size: 25px;
+    }
+    .promo-title span.year-text {
+        font-size: 70px;
+        left: 25%;
+    }
+    .product-promotion .owl-dots {
+        bottom: 0;
+        right: auto;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .product-promotion .owl-dots div {
+        display: inline-block;
+        margin: 20px 6px 6px;
+        width: 15px;
+    }
+    .footer-area, .footer-area .text-right {
+        text-align: center;
+    }
+    .footer-menu li {
+        padding: 20px;
+    }
+    .email-subscribe-form input[type="email"] {
+        margin:  0 0 15px 0;
+    }
+    .email-subscribe-form input[type="submit"]{
+        width: 86%;
+    }
+
+
+
+
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}

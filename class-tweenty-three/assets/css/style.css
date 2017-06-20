@@ -1,0 +1,176 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    color: #5e5e5e;
+    line-height: 1.7;
+}
+a:hover { text-decoration: none }
+/*header*/
+.header-section {
+    background: #000000 none repeat scroll 0 0;
+    box-shadow: 0 10px 10px #aaa;
+    color: #fff;
+    height: 70px;
+    margin-bottom: 60px;
+}
+.logo {
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.nav-section {
+    float: right;
+}
+.nav-section ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.nav-section ul li {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 18px 8px;
+}
+.nav-section ul li a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s linear 0s;
+}
+.nav-section ul li a:hover {
+    color: #29abe2;
+}
+/*========End Header=======*/
+.service-bg-1{background-image: url(../img/bg1.jpg)}
+.service-bg-2{background-image: url(../img/bg2.jpg)}
+.service-bg-3{background-image: url(../img/bg3.jpg)}
+
+.service-bg {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+     position: relative;
+    transition: .3s;
+}
+
+.section-title {
+    padding: 0 0 70px;
+}
+.section-title h2 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.section-title p {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 450px;
+}
+
+.single-service-item h2 {
+    background: #f97230 none repeat scroll 0 0;
+    bottom: 0;
+    font-size: 24px;
+    left: 8%;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    transform: translateY(50%);
+    width: 84%;
+}
+.single-service-item {
+    border: 1px solid #e5e5e5;
+}
+.single-service-item h2 a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 0;
+}
+.service-content {
+    padding: 38px 20px 20px;
+    text-align: center;
+}
+.service-more-btn {
+    color: #333;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    padding: 4px;
+}
+
+.single-service-item:hover .service-more-btn i.fa {
+    color: #f97230;
+}
+.service-more-btn i.fa {
+    font-size: 15px;
+    line-height: 22px;
+    transition: all 0.2s ease 0s;
+}
+.single-service-item:hover .service-bg {
+    opacity: 0.8;
+}
+
+/*=======start Footer=========*/
+.footer-section {
+    background: #000000 none repeat scroll 0 0;
+    box-shadow: 0 -10px 10px 2px #aaa;
+    color: #fff;
+    height: 70px;
+    margin-top: 60px;
+}
+.footer-left ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer-left ul li {
+    display: inline-block;
+    margin-top: 27px;
+}
+.footer-left ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 5px;
+    text-transform: uppercase;
+    transition: all 0.2s linear 0s;
+}
+.footer-left ul li a:hover {
+    color: #29abe2;
+}
+.footer-right p {
+    font-size: 16px;
+    margin: 24px 0 0;
+    text-align: right;
+}
+/*===========End Footer=====================*/

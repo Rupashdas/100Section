@@ -1,0 +1,156 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+.main-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    text-align: right;
+}
+.main-menu ul li {
+    display: inline-block;
+}
+.main-menu ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 16px;
+    color: #fff;
+    position: relative;
+    transition: .3s;
+}
+.main-menu ul li a:hover {
+    color: #e3aa34;
+}
+
+.main-menu ul li a#active::before{
+    background: #e38d36 none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+}
+.single-slide {
+    background: #263638 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+    min-height: 500px;
+}
+.single-slide h2 {
+    color: #e3aa34;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 56px;
+}
+.slide-image {
+    bottom: 0;
+    max-height: 470px;
+    position: absolute;
+    right: 15px;
+    height: 470px;
+}
+
+.header-area {
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+.slide-text {
+    padding-bottom: 120px;
+    padding-top: 210px;
+}
+.single-slide .row {
+    position: relative;
+}
+.readmore-btn {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #e3aa34;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+    transition: .3s;
+}
+.readmore-btn:hover{
+    color: #fff;
+    background:#e3aa34;
+    border-color: #fff;
+}
+.logo {
+    padding-top: 8px;
+    cursor: pointer;
+}
+.logo h2 {
+    color: #e3aa34;
+    display: inline-block;
+    font-size: 28px;
+    margin: 0;
+    padding-left: 10px;
+    text-transform: uppercase;
+    transform: translateY(8px);
+    transition: all 0.3s ease 0s;
+}
+
+.logo h2:hover {
+    color: #fff;
+}
+
+.homepage-slides.owl-carousel .owl-item img{
+    width: auto;
+}
+
+.homepage-slides .owl-dots div {
+    background: #e3aa34 none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    margin: 5px;
+    transition: all 0.3s ease 0s;
+    width: 15px;
+}
+.homepage-slides .owl-dots {
+    margin-top: -40px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.homepage-slides .owl-dots div.active {
+    border: 2px solid #fff;
+}
+
+
+

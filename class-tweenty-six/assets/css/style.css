@@ -1,0 +1,118 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+.section-padding {
+    padding: 80px 0;
+}
+.white-box {
+    box-shadow: 0 0 10px #f5f5f5;
+    padding: 30px;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], textarea {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: medium none;
+    padding: 15px;
+}
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+input[type="submit"], button[type="submit"] {
+    border-radius: 0;
+    margin: 0;
+    padding: 13px 18px;
+    width: auto;
+    background-color: #57ADFA;
+    transition: .3s;
+}
+input[type="submit"]:hover, button[type="submit"]:hover{
+    background-color: #000;
+}
+textarea {
+    resize: none;
+}
+
+.colored-box {
+    background: #57adfa none repeat scroll 0 0;
+    color: #fff;
+    min-height: 478px;
+    padding: 30px;
+}
+.colored-box a {
+    color: #fff;
+}
+.contact-info i.fa {
+    font-size: 20px;
+    left: 0;
+    position: absolute;
+    right: auto;
+    top: 5px;
+}
+.contact-info {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-left: 38px;
+    position: relative;
+}
+.colored-box > h4 {
+    border-bottom: 1px dashed;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.social-icons a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #333;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 35px;
+    box-shadow: 0 0 3px #999;
+}
+.social-icons {
+    padding: 55px 0;
+    text-align: left;
+}
+.social-icons a:hover {
+    color: #57adfa;
+    transform: rotate(360deg) scale(1.1);
+    box-shadow: 0 0 0;
+}
+
+
+

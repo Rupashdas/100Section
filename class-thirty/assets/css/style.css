@@ -1,0 +1,99 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+
+.section-padding {
+  padding: 130px 0;
+}
+body {
+  color: #787878;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #313131;
+}
+.bigger-text {
+  font-size: 18px;
+  line-height: 1.9;
+  text-align: center;
+  padding: 0 70px;
+}
+.bigger-text h1 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.22;
+  margin-bottom: 50px;
+}
+.boxed-btn {
+  color: #4752a9;
+  display: inline-block;
+  background: #4252a9;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 50px;
+  transition: .2s;
+}
+.bigger-text .boxed-btn {
+  margin-top: 30px;
+}
+.shadow-gallary {
+  position: relative;
+  top: 2px;
+}
+.shadow-gallary img:nth-child(2), .shadow-gallary img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.shadow-gallary img {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 50px #686868;
+}
+.shadow-gallary img:nth-child(2) {
+  z-index: 2;
+}
+.shadow-gallary img:nth-child(3) {
+  z-index: 3;
+  width: 70%;
+  right: auto;
+  left: -25px;
+  bottom: -80px;
+}
+.shadow-gallary img:nth-child(1) {
+  top: -50px;
+}
+.boxed-btn:hover {
+  background: #fff;
+  border: 1px solid #4752a9;
+  color: #4752ap;
+}

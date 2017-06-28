@@ -1,0 +1,123 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html, body, .full-height {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    font-size: 15px;
+    line-height: 2;
+}
+a:hover { text-decoration: none }
+
+.section-bg-1, .section-bg-2, .section-bg-3{
+    background-size: cover;
+    background-position: center;
+}
+.section-bg-1{background-image: url(../img/bg-1.jpg)}
+.section-bg-2{background-image: url(../img/bg-3.jpg)}
+.section-bg-3{background-image: url(../img/bg-6.jpg)}
+
+
+.section-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.section-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.section-padding {
+    padding: 60px;
+}
+.section-padding.full-height {
+    padding: 0;
+}
+.overlay {
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.overlay::after, .single-service-item::after {
+    pointer-events: ;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .4;
+}
+.single-service-item {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    transition: .3s;
+}
+.single-service-item h2 {
+    font-size: 25px;
+}
+.service-icon {
+    font-size: 100px;
+    line-height: 120px;
+}
+.service-read-more-btn {
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+    font-weight: 700;
+}
+.service-read-more-btn:hover {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.video-play-box {
+    text-align: center;
+    color: #fff;
+}
+.play-btn {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    color: #333;
+    background: #fff;
+    border-radius: 50%;
+}

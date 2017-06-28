@@ -1,0 +1,95 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover { text-decoration: none }
+.single-promo-box{background-image:  url(https://unsplash.it/500/600?random); background-color: #53B1DF;}
+
+
+.section-padding {
+    padding: 80px 0;
+}
+.single-promo-box {
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    display: block;
+    height: 300px;
+    position: relative;
+    transition: .3s;
+}
+
+
+.promo-text {
+    bottom: 0;
+    font-size: 20px;
+    left: 0;
+    padding: 21px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.promo-text h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.single-promo-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ccc;
+}
+
+.scrollToTop:hover{
+    text-decoration:none;
+}
+.scrollToTop{
+}
+.scrollToTop{
+    font-size: 24px;
+    color: royalblue;
+    background: #ddd;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    display: none;
+}
+.extra-content{
+    background: #eff9d4;
+    background: -moz-linear-gradient(top, #eff9d4 0%, #b57dd8 100%);
+    background: -webkit-linear-gradient(top, #eff9d4 0%,#b57dd8 100%);
+    background: linear-gradient(to bottom, #eff9d4 0%,#b57dd8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff9d4', endColorstr='#b57dd8',GradientType=0 );
+    height: 1000px;
+}

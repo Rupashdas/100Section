@@ -1,0 +1,131 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a:hover { text-decoration: none }
+.single-slide-item{background-image: url(../img/bg-img.jpg)}
+
+
+.section-padding{padding: 100px 0;}
+
+
+.single-slide-item {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    height: 650px;
+    position: relative;
+}
+.slide-text-area {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.slide-text {
+    background: #1784c7 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.9;
+    padding: 50px 180px 50px 0;
+    position: relative;
+}
+.gray-bg {
+    background: #1784c7 none repeat scroll 0 0;;
+    height: 100%;
+    left: 15px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    z-index: 1;
+}
+.slide-text h2 {
+    font-size: 50px;
+}
+.slide-text.theme-2 {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    z-index: 2;
+}
+.boxed-btn {
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+.boxed-btn::after {
+    background: red none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 0;
+    z-index: -1;
+}
+.boxed-btn:hover{
+    color: #fff;
+}
+.boxed-btn:hover::after{
+    width: 100%;
+
+}
+.slide-text .boxed-btn {
+    margin-top: 35px;
+}
+.slide-text::before {
+    background: #1784c7 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: -1000%;
+    position: absolute;
+    top: 0;
+    width: 1000%;
+
+}
+.slide-text::after {
+    background: #1784c7 none repeat scroll 0 0;
+    content: "";
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    transform: rotate(45deg) translateX(50%);
+    width: 30px;
+}
+
+.slide-text.theme-2::before, .slide-text.theme-2::after {
+    opacity: 0.5;
+}

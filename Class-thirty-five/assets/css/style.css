@@ -1,0 +1,167 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'roboto', sans-serif;
+}
+.wrappper{
+    padding: 100px 0;
+}
+a:hover { text-decoration: none }
+.section-absolute-bg {
+    background-color: #ddd;
+    background-image: url("../img/bg-1.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.section-absolute-bg::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  content: "";
+  opacity: .8;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.section-absolute-bg::before {
+  border-bottom: 15px solid transparent;
+  border-left: 45px solid #222931;
+  border-top: 15px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 100px;
+  width: 0;
+}
+.absolute-bg-1{background-image: url(../img/bg-2.jpg)}
+
+
+
+.section-padding {
+    background-color: #222931;
+    color: #ddd;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+}
+.section-padding h3 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.bordered-btn {
+  border: 1px solid #ddd;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 25px;
+  transition: all 0.3s ease 0s;
+}
+.bordered-btn:hover{
+    background: #fff;
+    color: #333;
+}
+.boxed-content .bordered-btn {
+    margin-top: 20px;
+}
+.boxed-content {
+    padding-left: 30px;
+    padding-right: 70px;
+    position: relative;
+}
+.boxed-content::before {
+    background: #ddd none repeat scroll 0 0;
+    content: "";
+    height: 44%;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 1px;
+}
+
+
+
+
+
+
+
+
+.absolute-bg-left .absolute-bg-1 {
+    left: 0;
+    right: auto;
+}
+.absolute-bg-left .boxed-content {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+.absolute-bg-left .section-absolute-bg::before {
+    left: auto;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 30/06/2017 09:17
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon.eot");
+  src: url("../fonts/flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon.woff") format("woff"),
+       url("../fonts/flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-001-thermometer-1:before { content: "\f100"; }
+.flaticon-002-otoscope:before { content: "\f101"; }
+.flaticon-003-sling:before { content: "\f102"; }
+.flaticon-004-bandages:before { content: "\f103"; }
+.flaticon-005-antacid:before { content: "\f104"; }
+.flaticon-006-ophtalmology:before { content: "\f105"; }
+.flaticon-007-shirt:before { content: "\f106"; }
+.flaticon-008-ointment:before { content: "\f107"; }
+.flaticon-009-eyedropper:before { content: "\f108"; }
+.flaticon-010-hospital-bed-1:before { content: "\f109"; }
+.flaticon-011-helicopter:before { content: "\f10a"; }
+.flaticon-012-crutches:before { content: "\f10b"; }
+.flaticon-013-microscope:before { content: "\f10c"; }
+.flaticon-014-oxygen:before { content: "\f10d"; }
+.flaticon-015-walker:before { content: "\f10e"; }
+.flaticon-016-thermometer:before { content: "\f10f"; }
+.flaticon-017-scissors:before { content: "\f110"; }
+.flaticon-018-x-rays:before { content: "\f111"; }
+.flaticon-019-hospital-1:before { content: "\f112"; }
+.flaticon-020-emergency-kit:before { content: "\f113"; }
+.flaticon-021-cardiogram:before { content: "\f114"; }
+.flaticon-022-serum:before { content: "\f115"; }
+.flaticon-023-dna:before { content: "\f116"; }
+.flaticon-024-hospital-bed:before { content: "\f117"; }
+.flaticon-025-radioactive:before { content: "\f118"; }
+.flaticon-026-eye-drops:before { content: "\f119"; }
+.flaticon-027-bandage:before { content: "\f11a"; }
+.flaticon-028-dentist:before { content: "\f11b"; }
+.flaticon-029-clinic-history:before { content: "\f11c"; }
+.flaticon-030-wheelchair:before { content: "\f11d"; }
+.flaticon-031-blood:before { content: "\f11e"; }
+.flaticon-032-pulse:before { content: "\f11f"; }
+.flaticon-033-ambulance:before { content: "\f120"; }
+.flaticon-034-magnetic-resonance:before { content: "\f121"; }
+.flaticon-035-blood-sample:before { content: "\f122"; }
+.flaticon-036-samples:before { content: "\f123"; }
+.flaticon-037-prescription:before { content: "\f124"; }
+.flaticon-038-hospital:before { content: "\f125"; }
+.flaticon-039-medical-result:before { content: "\f126"; }
+.flaticon-040-medical-app:before { content: "\f127"; }
+.flaticon-041-emergency-call:before { content: "\f128"; }
+.flaticon-042-syrup:before { content: "\f129"; }
+.flaticon-043-mortar:before { content: "\f12a"; }
+.flaticon-044-medicine:before { content: "\f12b"; }
+.flaticon-045-blood-pressure:before { content: "\f12c"; }
+.flaticon-046-nurse:before { content: "\f12d"; }
+.flaticon-047-phonendoscope:before { content: "\f12e"; }
+.flaticon-048-syringe:before { content: "\f12f"; }
+.flaticon-049-pills-bottle:before { content: "\f130"; }
+.flaticon-050-pill:before { content: "\f131"; }

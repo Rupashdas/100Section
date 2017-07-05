@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a:hover { text-decoration: none }
+
+.team-bg{
+    background-image: url(../img/member-4.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 300px;
+    margin-bottom: 50px;
+}
+.team-bg-2{background-image: url(../img/member-1.jpg)}
+.team-bg-3{background-image: url(../img/member-3.jpg)}
+.section-title {
+  font-size: 32px;
+  font-weight: 900;
+  position: relative;
+  right: 60px;
+  text-align: right;
+  text-transform: uppercase;
+  top: 131px;
+  transform: rotate(-90deg);
+  width: 300px;
+}
+.section-title::before {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: -2px;
+  top: -50px;
+  width: 30%;
+}
+.section-padding {
+    padding: 100px 0;
+}
+.member-info {
+  border: 1px solid #333;
+  color: #333;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.member-info h3 {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+
+.member-name {
+    margin-top: -14px;
+}
+.row .col-md-4:nth-child(2) .single-team-member {
+    margin-top: 116px;
+}

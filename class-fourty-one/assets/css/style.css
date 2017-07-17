@@ -1,0 +1,95 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:400,700');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Droid Serif', serif;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0f0f0f;
+}
+a:hover { text-decoration: none }
+ 
+.section-padding {
+    padding: 80px 0;
+}
+.colored-bg {
+    background: #79d4d9 none repeat scroll 0 0;
+    color: #fff;
+    position: relative;
+}
+.lady-img {
+    bottom: 0;
+    position: absolute;
+    right: -35px;
+}
+.slide-text {
+ max-width: 500px;
+    min-height: 703px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-top: 146px;
+}
+.to-ticker-text {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.to-ticker-text::after {
+    background: #fff none repeat scroll 0 0;
+    bottom: -12px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 10%;
+}
+.slide-text h1 {
+    font-family: "Droid Serif",serif;
+    font-size: 53px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.slide-text p {
+    font-size: 16px;
+    line-height: 19px;
+}
+.boxed-btn {
+    background: #f5f45e none repeat scroll 0 0;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px #f5f45e;
+    color: #333;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding: 13px 40px;
+    text-transform: uppercase;
+}
+.slide-text .boxed-btn {
+    margin-top: 30px;
+}

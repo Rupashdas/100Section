@@ -1,0 +1,136 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a:hover { text-decoration: none }
+
+
+h2.section-title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+section.section-padding {
+    padding: 180px 0;
+}
+
+.product-box-image-wrap {
+    background: #f1f1f1;
+    height: 320px;
+    width: 100%;
+    display: table;
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
+    transition: .3s;
+}
+
+.product-box-image-wrap-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.single-product-box h4 {
+    font-size: 20px;
+    color: #C8EE8F;
+    margin: 0 0 10px 0;
+}
+
+p.product-price {
+    color: #F47500;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.single-product-box {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.single-product-box::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    content: "";
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
+    background: url(../img/Capture.png) no-repeat scroll center top #3B3BFE;
+    background-size: cover;
+
+}
+.single-product-box:hover::after {
+    top: -10%;
+    visibility: visible;
+    opacity: 1;
+    height: 120%;
+}
+.single-product-box:hover .product-box-image-wrap{
+    background: none;
+}
+.single-product-box:hover .product-hover{
+    top: -16px;
+    opacity: 1;
+    visibility: visible;
+}
+.product-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+
+
+.product-hover a {
+    color: #C8EE8F;
+    font-size: 16px;
+    height: 50px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+}
+
+.product-hover a.product-link {
+    border: 2px solid #DD4F43;
+    width: 50px;
+}

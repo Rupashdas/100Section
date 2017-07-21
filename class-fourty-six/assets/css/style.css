@@ -1,0 +1,190 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+a:hover { text-decoration: none }
+
+.section-padding {
+    padding: 100px 0;
+    height: 650px;
+    min-height: 650px;
+
+}
+.dark-bg {
+    background-image: url(../img/800px_COLOURBOX1765400.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #a5a5a5;
+    position: relative;
+    z-index: 1;
+}
+.dark-bg:after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: .9;
+    z-index: -1;
+    background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+}
+
+
+.trailor-text {
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top: 50px;
+    width: 100%;
+}
+.trailor-text h2 {
+    color: #fff;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 0 0 25px;
+    position: relative;
+    text-transform: uppercase;
+}
+.trailor-text h2::before {
+    background: #ff4e4b none repeat scroll 0 0;
+    bottom: -9px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 18px;
+}
+.bordered-btn:hover {
+    color: #fff;
+}
+.bordered-btn {
+    border: 1px solid #ff4e4b;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 15px;
+    position: relative;
+    text-transform: uppercase;
+    width: 200px;
+    z-index: 2;
+}
+.bordered-btn i.fa {
+    float: right;
+    padding: 8px 0 0;
+}
+.bordered-btn::after {
+    background: #fe4d4a none repeat scroll 0 0;
+    content: "";
+    height: 84%;
+    left: 50%;
+    position: absolute;
+    top: 8%;
+    transition: all 0.3s ease 0s;
+    width: 0;
+    z-index: -1;
+}
+.bordered-btn:hover::after {
+    left: 2%;
+    width: 96%;
+}
+.trailor-text .bordered-btn {
+    margin: 30px 0 0;
+}
+.trailor-info {
+    height: 100%;
+    position: relative;
+    text-align: right;
+}
+.colored-pricing-box {
+    background: #ff4e4b none repeat scroll 0 0;
+    color: #fff;
+    height: 320px;
+    left: 140px;
+    padding-top: 50px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+.colored-pricing-box p {
+    opacity: 0.8;
+}
+.colored-pricing-box p.price-text {
+    color: #fff;
+    font-size: 40px;
+    opacity: 1;
+}
+.absolute-shopping-cart {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 10px #666;
+    color: #333;
+    font-size: 18px;
+    height: 50px;
+    left: -25px;
+    line-height: 50px;
+    position: absolute;
+    top: 25px;
+    width: 50px;
+}
+.featureed-trailors-carousel .single-trailor-item .trailor-info img {
+    display: inline;
+    max-width: 600px;
+    padding: 180px 0 0;
+    width: 600px;
+}
+.featureed-trailors-carousel div:nth-child(2) .colored-pricing-box img {
+    padding-top: 130px;
+}
+
+.featureed-trailors-carousel .owl-dots div:nth-child(1) span::before{ content: "01"}
+.featureed-trailors-carousel .owl-dots div:nth-child(2) span::before{ content: "02"}
+.featureed-trailors-carousel .owl-dots div:nth-child(3) span::before{ content: "03"}
+
+
+span {
+}
+.featureed-trailors-carousel .owl-dots div {
+    border-left: 2px solid #444;
+    padding: 20px 15px;
+}
+.featureed-trailors-carousel .owl-dots div.active {
+    border-color: #ff4e4b;
+}
+.featureed-trailors-carousel .owl-dots {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.featureed-trailors-carousel.owl-carousel.owl-theme.owl-loaded {
+    height: 500px
+}

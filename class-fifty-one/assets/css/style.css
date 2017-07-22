@@ -1,0 +1,137 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+.section-padding{padding: 80px 0;}
+
+.single-box-item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 600px;
+	background-color: #ddd;
+	position: relative;
+}
+.box-bg-one {
+	background-image: url(../img/boxed-bg-1.jpg)
+}
+.box-bg-two {
+	background-image: url(../img/boxed-bg-2.jpg)
+}
+.box-bg-three {
+	background-image: url(../img/boxed-bg-3.jpg)
+}
+.box-bg-four {
+	background-image: url(../img/boxed-bg-4.jpg)
+}
+.box-bg-five {
+	background-image: url(../img/boxed-bg-5.jpg)
+}
+.single-box-item.half-size {
+	height: 300px;
+}
+.row.nopadding .col-md-4 {
+    padding: 0;
+}
+.row.nopadding {
+    margin: 0;
+}
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+	color: #7C7C7C;
+}
+.section-title h2 {
+    text-transform: uppercase;
+	color: #464646;
+}
+
+.box-item-hover i.fa {
+	color: #3E8608;
+	font-size: 20px;
+	margin-bottom: 15px;
+	transition: .3s;
+	transform: scale(10);
+	visibility: hidden;
+	opacity: 0;
+}
+.single-box-item:hover .box-item-hover i.fa{
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+    transform: scale(2);
+}
+.box-item-hover {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.single-box-item:hover .box-item-hover {
+	opacity: 1;
+	visibility: visible;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    width: 90%
+}
+.box-item-hover::after {
+    background: #333 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.box-item-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.box-item-tablecell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+}
+
+.box-item-hover h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}

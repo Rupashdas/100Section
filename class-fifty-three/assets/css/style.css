@@ -1,0 +1,245 @@
+/* Base CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,700i,800,800i');
+body {
+    color: #99A3AC;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: inherit;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none
+}
+
+p {
+    line-height: 25px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+
+body {
+    color: #737678;
+    font-size: 17px;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+/*main menu css*/
+.mainmenu{
+    background: #26395A;
+}
+.logo {
+    color: #1CC9CE;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 6px 10px;
+}
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.mainmenu li ul{
+    position: absolute;
+    top: 52px;
+    left: 0;
+    background: #26395A;
+    width: 159px;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+.mainmenu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    transform: none;
+    right: 0;
+}
+.mainmenu ul li  a{
+    transition: .3s
+}
+.mainmenu ul li:hover > a{
+    background: #5A6D8E;
+}
+.mainmenu ul li {
+    display: inline-block;
+    position: relative
+}
+
+.mainmenu ul li a {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 16px 26px;
+}
+.mainmenu ul li  ul a {
+    padding: 10px;
+}
+.mainmenu li ul li {
+    display: block;
+    text-align: left;
+}
+.mainmenu li ul a {
+    padding: 20px;
+    text-transform: none;
+}
+.mainmenu li:first-child ul{
+    top: 150%;
+}
+.mainmenu li:first-child:hover ul{
+    top: 100%;
+}
+.mainmenu li:nth-child(3) ul {
+    height: 0px;
+    overflow: hidden;
+    transition: .3s;
+    opacity: 1
+}
+.mainmenu li:nth-child(3):hover ul{
+    height: 240px
+}
+.mainmenu li:nth-child(4) ul {
+    left: 20px;
+}
+.mainmenu li:nth-child(5) ul{
+    transform: rotate(45deg);
+    right:0;
+}
+
+
+/*service css*/
+.section-title {
+    color: #474747;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #474747;
+    font-weight: 400;
+}
+
+.section-title h2 span {
+    color: #1cc9ce;
+}
+
+.section-title>p {
+    color: #888;
+    line-height: 1.3;
+}
+
+
+.service-box-bg{background-image: url(../img/service-1.jpg)}
+.service-box-bg-2{background-image: url(../img/service-2.jpg)}
+.service-box-bg-3{background-image: url(../img/service-3.jpg)}
+
+
+.service-box-bg {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 250px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.single-service-box {
+    border: 2px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    color: #333;
+}
+
+
+.service-box-bg i {
+    background: #26395a none repeat scroll 0 0;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    bottom: -35px;
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    height: 70px;
+    position: absolute;
+    width: 70px;
+    left: 50%;
+    margin-left: -35px;
+    transition: 0.3s;
+}
+
+.service-box-bg i::before {
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.single-service-box>h2 {
+    margin: 0;
+    padding: 45px 20px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+.single-service-box:hover .service-box-bg i {
+    background-color: #1cc9ce;
+    border-color: #26395a;
+}
+
+.single-service-box:hover h2 {
+    background-color: #26395a;
+    color: #fff;
+}
+

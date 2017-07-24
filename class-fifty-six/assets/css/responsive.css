@@ -1,0 +1,122 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+.logo {
+  text-align: center;
+}
+.header-area {
+  padding: 60px 80px;
+  position: relative;
+}
+.hero-text {
+  padding-left: 40px;
+  width: 80%;
+}
+.mainmenu {
+  text-align: center;
+}
+.site-wrap-tablecell {
+  vertical-align: top;
+}
+.footer-area {
+  margin-top: 101px;
+  padding: 8px 15px;
+  text-align: center;
+}
+.social-links {
+  padding-right: 0;
+  text-align: center;
+}
+.social-links a {
+  font-size: 28px;
+}
+.theme-2 .footer-area {
+  margin-top: 110px;
+}
+.theme-2 .hero-text h1 {
+  font-size: 39px;
+}
+.theme-2 .hero-text p {
+  padding-right: 100px;
+}
+.copyright-text {
+  padding-left: 13px;
+}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+ .logo {
+  text-align: center;
+}
+.header-area {
+  padding: 40px;
+  position: relative;
+}
+.theme-2 .header-area {
+  position: relative;
+  z-index: 1;
+  padding: 40px 12px;
+}
+.logo > h1 {
+  font-size: 34px;
+}
+.hero-text {
+  padding-left: 0;
+  width: 100%;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.hero-text h1 {
+  font-size: 27px;
+  line-height: 46px;
+}
+.theme-2 .hero-text {
+  width: 100%;
+  padding-left: 5px;
+}
+.theme-2 .hero-text h1 {
+  font-size: 24px;
+  line-height: 35px;
+}
+.theme-2 .hero-text p {
+  padding-right: 0;
+}
+.mainmenu {
+  text-align: center;
+  font-size: 18px;
+}
+.mainmenu li {
+  padding-left: 11px;
+}
+.site-wrap-tablecell {
+  vertical-align: top;
+}
+.footer-area {
+  margin-top: 101px;
+  padding: 8px 15px;
+  text-align: center;
+}
+.social-links {
+  padding-right: 0;
+  text-align: center;
+}
+.social-links a {
+  font-size: 28px;
+}
+.theme-2 .footer-area {
+  margin-top: 110px;
+}
+.copyright-text {
+  padding-left: 13px;
+}
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}

@@ -1,0 +1,184 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a:hover { text-decoration: none }
+
+
+.porejct-list .col-md-4:nth-child(1) .single-project-item {background-image: url(../img/bg-1.jpg)}
+.porejct-list .col-md-4:nth-child(2) .single-project-item {background-image: url(../img/bg-2.jpg)}
+.porejct-list .col-md-4:nth-child(3) .single-project-item {background-image: url(../img/bg-3.jpg)}
+.porejct-list .col-md-4:nth-child(4) .single-project-item {background-image: url(../img/bg-4.jpg)}
+.porejct-list .col-md-4:nth-child(5) .single-project-item {background-image: url(../img/bg-5.jpg)}
+.porejct-list .col-md-4:nth-child(6) .single-project-item {background-image: url(../img/bg-6.jpg)}
+.porejct-list .col-md-4:nth-child(7) .single-project-item {background-image: url(../img/bg-7.jpg)}
+.porejct-list .col-md-4:nth-child(8) .single-project-item {background-image: url(../img/bg-8.jpg)}
+.section-padding{
+    padding: 80px 0;
+}
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: -moz-pointer;
+    cursor: -webkit-pointer; 
+    cursor: pointer;
+}
+.project-title {
+    margin: 0 0 40px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.project-title li {
+    display: inline-block;
+    font-weight: 700;
+    color: #777;
+    margin: 0 10px;
+    cursor: pointer; 
+    transition: .5s;
+    position: relative; 
+}
+
+.project-title li::after {
+    background: #333 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.project-title li.active::after{
+    width: 100%;
+    left: 0;
+    opacity: 1;
+}
+
+.project-hover {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    transition: .3s;
+    transform: scale(.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+}
+.project-hover:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #fff;
+    z-index: -1;
+    opacity: .8;
+}
+.project-hover h2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.single-project-item {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 30px;
+    display: table;
+    width: 100%;
+    background-color: #ddd;
+    position: relative;
+}
+
+.single-project-item:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  content: "";
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.single-project-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  content: "";
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  z-index: 2;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.single-project-item:hover .project-hover {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.single-project-item:hover::before, .single-project-item:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.open-img {
+	font-size: 25px;
+	right: auto;
+	left: 15px;
+	position: absolute;
+	top: 13px;
+	transform: scale(8);
+	transition: .3s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 9999;
+}
+.single-project-item:hover .open-img {
+	transform: scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+
+

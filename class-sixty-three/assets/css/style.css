@@ -1,0 +1,77 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+
+.section-padding {
+    padding: 80px 0;
+}
+.service-list {
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.single-service-box {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 14%;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.service-list .col-md-4 {
+    padding: 0;
+}
+.service-list .row {
+    margin: 0;
+}
+.single-service-box p:last-child {
+    margin: 0;
+    padding: 0;
+}
+.single-service-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.service-icon {
+    font-size: 30px;
+	transition: .3s
+}
+.single-service-box:hover .service-icon {
+    color: #dd4c40;
+	transform: rotate(360deg) scale(1.1)
+}
+.single-service-box:hover {
+    box-shadow: 0 40px 100px #999;
+}
+

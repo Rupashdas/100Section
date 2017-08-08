@@ -1,0 +1,257 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html, body{
+	height: 100%;
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+input:focus, texarea:focus, .form-control:focus{
+	background: #EEEEEE;
+	outline: none;
+	box-shadow: 0 0 0 !important;
+	border-color: #999;
+}
+
+a:hover, a:focus { text-decoration: none }
+.right-side{
+	background-image: url(../img/boxed-bg-2.jpg);
+    background-position: top center;
+    background-size: cover;
+    position: relative;  
+	margin-left: 20%;
+    height: 100%;
+    background-color: #333;
+	z-index: 1;
+	height: 100%;
+	display: table;
+	width: 80%;
+}
+.right-side-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+}
+.right-side:after{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: -moz-linear-gradient(left, rgba(208,224,105,1) 0%, rgba(208,224,105,0) 51%, rgba(208,224,105,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(208,224,105,1) 0%,rgba(208,224,105,0) 51%,rgba(208,224,105,1) 100%);
+	background: linear-gradient(to right, rgba(208,224,105,1) 0%,rgba(208,224,105,0) 51%,rgba(208,224,105,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e069', endColorstr='#d0e069',GradientType=1 );
+	content: "";
+	z-index: -1;
+}
+.left-side{
+	position: fixed;
+	width: 20%;
+	background-color: #333;
+	height: 100%;
+}
+.right-side-table-cell {
+    color: #fff;
+    padding: 10%;
+}
+
+.right-side-table-cell
+ h2 {
+    font-size: 60px;
+}
+
+.right-side-table-cell h2 span {
+    color: #FFCE43;
+}
+
+.logo {
+    color: #ddd;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin-top: 84px;
+	z-index: 1;
+}
+
+.logo:before {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    background: #DCCA36;
+    content: "";
+    z-index: -1;
+    border-radius: 50%;
+    opacity: .5;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+ul.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.main-menu li {
+    display: block;
+    width: 27%;
+    margin: 0 auto;
+}
+
+.main-menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 0;
+	position: relative;
+	transition: .3s;
+}
+.main-menu li a:after{
+	height: 2px;
+	width: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	background: #DCCA36;
+	transition: .3s;
+	position: absolute;
+}
+.main-menu li a:hover{
+	color: #DCCA36;
+}
+.main-menu li a:hover::after{
+	width: 100%;
+}
+
+.social-link {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+	width: 100%;
+}
+
+a.boxed-btn {
+	
+    color: #333;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    z-index: 1;
+	 font-weight: 700;
+}
+
+a.boxed-btn:after {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+    opacity: .5;
+}
+
+.right-side a.boxed-btn {
+    margin-top: 26px;
+}
+
+.social-link i.fa {
+    color: #fff;
+    padding: 14px;
+    margin-bottom: 20px;
+    transition: .3s;
+    font-size: 18px;
+}
+
+.social-link i.fa:hover {
+    color: #ECD737;
+}
+
+p.copyright-text span {
+    color: #ECD737;
+}
+
+p.copyright-text {
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+#contact .container {
+    width: 100%;
+}
+#contact .input-group, #contact .btn {
+    border-radius: 0;
+    margin-top: 15px;
+    resize: none;
+}
+#contact input, #contact span {
+    border-radius: 0;
+}
+#contact textarea {
+    resize: none;
+}
+#contact .btn {
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 14px;
+	transition: .3s;
+}
+
+#contact .btn:hover{
+	background: transparent;
+	border: 1px solid #333;
+	color: #333;
+	
+}
+
+.right-side .popover {
+    color: #333;
+}
+
+
+.pointing-right img {
+    height: 404px;
+    width: 100%;
+}
+
+
+	

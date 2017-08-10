@@ -243,6 +243,11 @@ p.copyright-text {
 	
 }
 
+.right-side .popover {
+    color: #333;
+}
+
+
 .pointing-right img {
     height: 404px;
     width: 100%;

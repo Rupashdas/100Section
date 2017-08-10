@@ -1,0 +1,340 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover { text-decoration: none }
+
+/*drop down menu*/
+.mainmenu ul {
+    background: #4862a3 none repeat scroll 0 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0 0 0 70px;
+    text-align: left;
+    z-index: 2;
+}
+.mainmenu ul li {
+    display: inline-block;
+    position: relative;
+}
+.mainmenu ul li a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.mainmenu ul li a:hover {
+    background: #3e5899 none repeat scroll 0 0;
+}
+.mainmenu li ul{
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 200px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    height: 0;
+    overflow: hidden;
+}
+.mainmenu li ul li {
+    display: block;
+}
+
+.mainmenu ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    height: 312px;
+    overflow: inherit
+}
+
+
+/*second Level*/
+.mainmenu ul ul li ul {
+    left: 200px;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.mainmenu ul ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+/*testimonial carousel*/
+.section-padding {
+    padding: 80px 0;
+}
+.section-borders span {
+    background: #70ab0b none repeat scroll 0 0;
+    border-radius: 2px;
+    display: inline-block;
+    height: 5px;
+    width: 50px;
+}
+.section-borders span.black-border {
+    background: #333 none repeat scroll 0 0;
+    margin: 0 5px;
+    width: 30px;
+}
+.section-title h2 {
+    font-size: 35px;
+}
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.client-testimonial-slider .owl-dots div {
+    background: #70ab0b none repeat scroll 0 0;
+    display: inline-block;
+    height: 5px;
+    margin: 5px;
+    transition: all 0.2s ease 0s;
+    width: 20px;
+}
+.client-testimonial-slider .owl-dots div.active {
+    background: #333 none repeat scroll 0 0;
+    width: 30px;
+}
+.client-testimonial-slider .owl-dots {
+    margin-top: 28px;
+    text-align: center;
+}
+.single-testimonial-item {
+    box-shadow: 0 0 2px #dadfd3;
+    color: #919191;
+    margin: 2px;
+    padding: 15px 15px 15px 80px;
+    position: relative;
+}
+.single-testimonial-item::after {
+    background: #eef1ec none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 78%;
+    left: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+}
+.single-testimonial-item::before {
+    color: #70ab0b;
+    content: "";
+    font-family: fontAwesome;
+    font-size: 20px;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.single-testimonial-item h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.single-testimonial-item h3 span {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.single-testimonial-item p {
+    font-style: italic;
+}
+
+.counter-up-section {
+    background: #3879D9;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.single-counter-box p {font-size: 20px;margin: 0;}
+
+.counter span {
+    font-size: 50px;
+    margin-right: 11px;
+}
+
+.single-counter-box {
+    position: relative;
+    padding: 34px 0;
+    border-bottom: 1px solid;
+    border-radius: 34px;
+    border-top: 6px solid;
+    margin-top: 20px;
+    box-shadow: 0 0 23px #333 inset;
+}
+
+
+
+.section-title {
+  display: inline-block;
+  padding: 20px;
+  border-bottom: 2px solid;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section-title::before, .section-title::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 5px solid transparent;
+}
+.section-title::after {
+  left: 0;
+  border-left: 10px solid #fff;
+}
+.section-title::before {
+  right: 0;
+  border-right: 10px solid #fff;
+}
+
+
+
+
+
+
+.video-play-btn {
+    background-color: #333;
+    background-position: center center;
+    background-size: 110% auto;
+    color: #fff;
+    display: table;
+    height: 450px;
+    position: relative;
+    transition: .4s;
+    width: 100%;
+}
+.video-play-btn:hover {
+    background-size: 115%;
+}
+.video-play-btn:hover .video-overlay {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+.video-play-btn i.fa-play {
+    background-color: #eb1c38;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    height: 100px;
+    left: 50%;
+    line-height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    padding-left: 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100px;
+}
+.video-overlay {
+    display: table-cell;
+    height: 100%;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out 0s;
+    vertical-align: middle;
+    visibility: hidden;
+    z-index: 1;
+}
+.video-overlay::after {
+    background-color: rgba(235, 28, 56, 0.6);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.video-play-btn:hover {
+    color: #fff;
+}
+.video-top-desc span {
+    position: relative;
+}
+
+.video-top-desc span::after {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    right: -27px;
+    top: 50%;
+    background: #fff;
+    content: "";
+    transform: translateY(-50%);
+}
+.video-top-desc span::before {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    left: -27px;
+    top: 50%;
+    background: #fff;
+    content: "";
+    transform: translateY(-50%);
+}
+.video-overlay .boxed-plus {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 40px;
+}
+.video-top-desc {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.video-overlay h3 {
+    font-size: 40px;
+    margin: 20px;
+}

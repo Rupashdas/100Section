@@ -1,0 +1,101 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+
+.contact-wrapper-bg{
+    background-image: url(../img/background.jpg);
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    height: 77%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    z-index: 1;
+}
+.contact-wrapper-bg:after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #1FAED2;
+    opacity: .7;
+    z-index: -1
+}
+.contact-wrapper .row {
+    z-index: 2;
+    position: relative;
+}
+
+.contact-wrapper {
+    padding: 50px;
+    color: #fff;
+    font-size: 16px;
+}
+.boxed-form textarea {
+    max-height: 170px;
+}
+
+.boxed-form {
+    background: #fff;
+    padding: 30px;
+    margin-left: 60px;
+    box-shadow: 0 0 3px #ddd;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.boxed-form input, .boxed-form textarea {
+    padding: 12px;
+    color: #333;
+    border: 1px solid #ddd;
+    width: 100%;
+    resize: none;
+}
+.boxed-form h2{
+    color: #333;
+}
+.boxed-form input[type="submit"] {
+    background: #18D0E8;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.boxed-form input[type="submit"]:hover{
+    background: transparent;
+    color: #18D0E8 ;
+}

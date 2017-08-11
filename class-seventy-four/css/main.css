@@ -190,7 +190,7 @@ div#mynavbar.fixed {
   margin-bottom: 0;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  top: 0;
   background: #333
 }
 

@@ -59,7 +59,7 @@ a:hover { text-decoration: none }
     background-image: url(../img/background.jpg);)
 }
 
-.single-feature-item {
+.single-service {
     position: relative;
     z-index: 1;
     padding-bottom: 30px;
@@ -93,7 +93,7 @@ a:hover { text-decoration: none }
     width: 100%;
 }
 
-.single-feature-item h2 {
+.single-service h2 {
     font-size: 22px;
     font-weight: 400;
 }
@@ -103,7 +103,7 @@ a:hover { text-decoration: none }
 	right: auto;
 }
 
-.single-feature-item.left-icon {
+.single-service.left-icon {
     margin-left: 0;
     margin-right: 90px;
     padding-left: 170px;
@@ -111,16 +111,16 @@ a:hover { text-decoration: none }
     text-align: left;
 }
 
-.single-feature-item.feature-padding-left {
+.single-service.feature-padding-left {
     margin-left: 0;
     margin-right: 120px;
 }
 
-.single-feature-item.feature-padding-right.left-icon {
+.single-service.feature-padding-right.left-icon {
     margin-left: 120px;
     margin-right: 0;
 }
 
-.single-feature-item:hover .feature-icon {
+.single-service:hover .feature-icon {
 	box-shadow: -5px 7px 10px #666;
 }

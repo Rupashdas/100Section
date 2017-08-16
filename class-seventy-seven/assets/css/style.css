@@ -1,0 +1,140 @@
+/* 
+Base CSS 
+
+https://unsplash.it/500/400/?image=1
+*/
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.single-feature-item {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-1 .feature-bg {
+    background-image: url(../img/background-1.jpg)
+}
+
+.feature-2 .feature-bg {
+    background-image: url(../img/background-2.jpg)
+}
+
+.feature-3 .feature-bg {
+    background-image: url(../img/background-3.jpg)
+}
+
+.feature-4 .feature-bg {
+    background-image: url(../img/background-4.jpg)
+}
+
+.feature-bg {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background-position: center;
+    background-size: cover;
+    background-color: #ddd;
+    bottom: -50px;
+}
+
+.feature-content {
+    background-color: #fff;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    padding-left: 100px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.feature-content h2 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.feature-content p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.feature-no {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 50px;
+    font-weight: 900;
+    opacity: .3;
+}
+
+.feature-no:after {
+    position: absolute;
+    left: 48px;
+    top: -5px;
+    width: 2px;
+    height: 100px;
+    background-color: #ddd;
+    content: "";
+    transform: rotate(45deg);
+}
+
+.feature-1 .feature-content {
+    border-bottom: 3px solid #FD5F3A;
+}
+
+.feature-2 .feature-content {
+    border-bottom: 3px solid #2EC693;
+}
+
+.feature-3 .feature-content {
+    border-bottom: 3px solid #B07AF4;
+}
+
+.feature-4 .feature-content {
+    border-bottom: 3px solid #FDBB5A;
+}

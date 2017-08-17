@@ -1,0 +1,109 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Condiment|Roboto:300,400,700,900');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.section-padding{
+    padding: 100px 0;
+}
+a:hover { text-decoration: none }
+.food-box-info h3{
+    font-family: 'Condiment', cursive;
+}
+.food-box-bg{background-image: url(../img/Food-one.jpg)}    
+.food-box-bg-2{background-image: url(../img/food-two.jpg)}    
+.food-box-bg-3{background-image: url(../img/food-three.jpg)}
+
+.single-food-box {}
+
+.food-box-bg {
+    height: 293px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 -15px;
+}
+
+.food-box-info {
+    background: #f3f3f3;
+    padding: 30px;
+    border-top: 3px solid #F98E0A;
+    margin: -100px 15px 0 15px;
+    text-align: center;
+    padding-bottom: 40px;
+    transition: .3s;
+}
+
+p.food-price span {
+    font-size: 200%;
+    font-weight: 700;
+}
+
+.food-box-info h2 {
+    color: #F98E0A;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+a.bordered-btn {
+    border: 1px solid;
+    display: inline-block;
+    padding: 10px 22px;
+    color: #F98E0A;
+    transition: .3s;
+}
+
+p.food-price {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 17px 0;
+}
+
+.food-box-info:hover {
+    background: #F98E0A;
+    color: #fff;
+}
+
+.food-box-info {}
+
+.food-box-info:hover h2, .food-box-info:hover a.bordered-btn {
+    color: #fff;
+}
+
+.food-box-info:hover h3 {
+    color: #FFFE00;
+}
+
+.container-fluid .col-md-4:first-child .food-box-bg {
+    margin-left: 15px;
+}
+
+.container-fluid .col-md-4:last-child .food-box-bg {
+    margin-right: 15px;
+}

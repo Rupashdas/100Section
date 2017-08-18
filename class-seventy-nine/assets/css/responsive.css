@@ -1,0 +1,73 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+    .hero-text h1{color:red}
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .hero-text h1{color:green}
+    .hero-text {
+        text-align: center;
+    }
+    .email-subscibe-form {
+        margin: 0 auto;
+    }
+
+
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+    .welcome-area {
+        height: auto;
+    }
+    .hera-area-table {
+        display: block;
+        height: auto;
+    }
+    .logo,  .main-menu {
+        text-align: center;
+    }
+    .copyright-area {
+        position: inherit;
+        text-align: center;
+    }
+    .copyright-area, .copyright-area ul {
+        text-align: center;
+    }
+    .copyright-area li{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 20px;
+    }
+
+    .hero-text {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .logo {
+        margin-bottom: 15px;
+    }
+    .hero-text h1{color:blue}
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    .hero-text h1{color:yellow}
+    .hero-text {
+        text-align: center;
+    }
+    .email-subscibe-form {
+        margin: 0 auto;
+    }
+    .hero-area-tablecell {
+        display: block;
+    }
+   .email-subscibe-form input[type="email"], .email-subscibe-form input[type="submit"], .email-subscibe-form button[type="submit"] {
+        width: 50%;
+        margin: 0;
+    }
+    .email-subscibe-form input[type="submit"], .email-subscibe-form button[type="submit"]{
+        margin-top: 10px;
+    }
+}

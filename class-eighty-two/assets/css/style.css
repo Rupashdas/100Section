@@ -1,0 +1,182 @@
+.alignleft {
+    float: left;
+    margin-right: 15px
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px
+}
+
+body {
+    font-family: 'Open+Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.section-padding {
+    padding: 80px 0
+}
+
+.feature-project-wrap {
+    position: relative
+}
+
+.feature-project-wrap h2 {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #8f8f92;
+    letter-spacing: 1px;
+    width: 35%
+}
+
+.feature-project-wrap h2 span {
+    font-size: 40px;
+    margin-top: 5px;
+    display: block;
+    color: #27272f
+}
+
+.project-bg-1 {
+    background-image: url(../img/6.jpg)
+}
+
+.project-bg-2 {
+    background-image: url(../img/download.jpg)
+}
+
+.project-bg-3 {
+    background-image: url(../img/students-working-on-apple-imac-computers.jpg)
+}
+
+.owl-carousel .single-feature-item {
+    overflow: hidden;
+    min-height: 568px;
+}
+
+.single-feature-item {
+    position: relative;
+    text-align: right
+}
+
+.project-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 60%;
+    border: 15px solid #fff;
+    margin-left: -15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    z-index: 9;
+}
+
+.project-text {
+    background: #f24816;
+    color: #fff;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+    padding-left: 270px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-right: 30px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-top: 180px
+}
+
+.project-text h3 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 500
+}
+
+.view-more-btn {
+    display: inline-block;
+    color: #fff;
+    margin-top: 25px;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.view-more-btn:hover {
+    color: #fff
+}
+
+.feature-projects .owl-dots div:nth-child(1):before {
+    content: "01"
+}
+
+.feature-projects .owl-dots div:nth-child(2):before {
+    content: "02"
+}
+
+.feature-projects .owl-dots div:nth-child(3):before {
+    content: "03"
+}
+
+.feature-projects .owl-dots div:nth-child(4):before {
+    content: "04"
+}
+
+.feature-projects .owl-dots div:nth-child(5):before {
+    content: "05"
+}
+
+.feature-projects .owl-dots div:nth-child(6):before {
+    content: "06"
+}
+
+.feature-projects .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: -18px
+}
+
+.feature-projects .owl-dots div {
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 20px;
+    opacity: .5;
+    font-weight: 300
+}
+
+.feature-projects .owl-dots div.active {
+    opacity: .8;
+    color: #f24816
+}

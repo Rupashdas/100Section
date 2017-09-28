@@ -75,6 +75,7 @@ a:hover { text-decoration: none }
     font-size: 150px;
     margin: 0;
     font-family: 'AsiyahScript';
+	font-weight: 400;
 }
 .carousel-item-tablecell p {
     font-size: 17px;

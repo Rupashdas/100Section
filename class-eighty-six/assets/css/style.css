@@ -1,0 +1,142 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-size: 16px;
+    font-family: 'Patua One', cursive;
+    line-height: 1.8;
+    color: #999;
+
+}
+a:hover { 
+    text-decoration: none;
+    color: #333;
+}
+.styled-bg-1{
+    background-image: url(../img/bg-1.jpg);
+}
+.styled-bg-2{
+    background-image: url(../img/bg-2.jpg);
+
+}
+.special-area{
+    padding: 80px 0;
+}
+.styled-bg{
+    height: 550px;
+    position: relative;
+    z-index: 2;
+    margin-left: -75px;
+    margin-bottom: 120px;
+}
+.right-side .styled-bg{
+    margin-left: 0px;
+    margin-right: -75px;
+}
+.styled-bg:after{
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #F3F3F3;
+    z-index: -1;
+
+}
+.right-side .styled-bg:after{
+    left: auto;
+    right: -30px;
+}
+
+.styled-bg:before{
+    position: absolute;
+    right: 30%;
+    bottom: -65px;
+    content: "";
+    height: 100px;
+    width: 2px;
+    background: #AA8D70;
+
+}
+.right-side .styled-bg:before{
+    left: 30%;
+    right: auto;
+}
+.styled-bg-inner{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+h2.styled-section-title{
+    background: #fff;
+    position: relative;
+    margin-left: -260px;
+    font-size: 59px;
+    padding: 20px 70px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    color: #333;
+    z-index: 3;
+    text-transform: capitalize;
+}
+
+.right-side h2.styled-section-title{
+    margin-left: 0px;
+    margin-right: -230px;
+    padding: 20px 60px;
+}
+.left-side p{
+    padding-right: 80px;
+}
+.right-side p, .right-side a{
+    padding-left: 65px;
+}
+
+.inline-border-btn {
+    color: #333;
+    font-weight: 700;
+    position: relative;
+}
+
+.right-side .inline-border-btn:after{
+    left: 65px;
+
+}
+.inline-border-btn:after{
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    content: "";
+    height: 2px;
+    width: 110px;
+    background: #AA8D70;
+
+}

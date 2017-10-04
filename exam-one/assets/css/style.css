@@ -95,7 +95,9 @@ a:hover {
     color: #fc721e;
     top: 2px
 }
-
+.contact-info i {
+    line-height: 26px;
+}
 .header-left-content a {
     color: #fff;
     -webkit-transition: .3s;

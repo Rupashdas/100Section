@@ -136,7 +136,7 @@ a:hover {
     border-color: #fc721e
 }
 
-.header-left-content a:hover {
+.header-left-content a:hover, .contact-info a:hover {
     opacity: .8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"
 }
@@ -870,7 +870,9 @@ a:hover {
 .footer-wid li a:hover {
     color: #fff
 }
-
+.contact-info a{
+    transition: .3s
+}
 .footer-wid li a {
     display: block;
     padding: 5px 0;

@@ -11,7 +11,7 @@
 
         $(".slider-area").owlCarousel({
             items: 1,
-            autoplay: true,
+            autoplay: false,
             nav: false,
             dots: true,
             loop: true,

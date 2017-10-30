@@ -171,25 +171,22 @@ a:hover { text-decoration: none }
     background-color:#fc721e;
     border-color:#fc721e;
 }
+.slider-area .owl-dots .owl-dot {
+    height: 20px;
+    width: 2px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 8px;
+}
 
 .slider-area .owl-dots {
-    text-align: left;
     position: relative;
-    bottom: 40px;
+    bottom: 90px;
     width: 1110px;
     margin: 0 auto;
 }
-.slider-area .owl-dots div {
-    height: 25px;
-    background: #fff;
-    width: 2px;
-    margin-right: 8px;
-    transition: .3s;
-    display: inline-block
-}
+
 .slider-area .owl-dots .owl-dot.active {
-    height: 30px;
-    background: #fc721e;
+    height: 25px;
+    background: #FC721E;
 }
-
-

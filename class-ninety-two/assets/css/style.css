@@ -238,6 +238,7 @@ a:hover { text-decoration: none }
     font-size: 20px;
     color: #fff;
     padding: 12px;
+	text-transform: uppercase;
 }
 .service-box-content {
     border: 1px solid #e8e7e7;
